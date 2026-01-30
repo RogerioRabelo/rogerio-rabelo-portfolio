@@ -23,7 +23,7 @@ export function Hero({ isDark }: HeroProps) {
       return `${baseUrl}?locale=pt_BR`
     }
     
-    return baseUrl
+    return `${baseUrl}?locale=en_US`
   }
 
   const handleCopy = async (text: string, type: string) => {
