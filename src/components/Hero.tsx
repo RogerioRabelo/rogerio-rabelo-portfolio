@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
-import { ChevronDown, Github } from "lucide-react"
+import { ChevronDown, Github, Linkedin } from "lucide-react"
 import { useToast } from '@/components/ToastProvider'
 import { useTranslation } from 'react-i18next'
 
@@ -11,9 +11,20 @@ interface HeroProps {
 }
 
 export function Hero({ isDark }: HeroProps) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [imageError, setImageError] = useState(false)
   const { showToast } = useToast()
+
+  const getLinkedInUrl = () => {
+    const baseUrl = "https://www.linkedin.com/in/rogério-rabelo-ferreira-junior-b55226230/"
+    const language = i18n.language
+    
+    if (language.startsWith('pt')) {
+      return `${baseUrl}?locale=pt_BR`
+    }
+    
+    return baseUrl
+  }
 
   const handleCopy = async (text: string, type: string) => {
     try {
@@ -71,12 +82,16 @@ export function Hero({ isDark }: HeroProps) {
             </Button>
             <Button 
               asChild
-              variant="outline"
               size="lg"
               className="w-full sm:w-auto"
+              style={{ 
+                backgroundColor: '#0077B5',
+                color: '#FFFFFF'
+              }}
             >
-              <a href="#experiencias">
-                {t('hero.viewExperience')}
+              <a href={getLinkedInUrl()} target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-5 h-5 mr-2" />
+                LinkedIn
               </a>
             </Button>
           </div>
