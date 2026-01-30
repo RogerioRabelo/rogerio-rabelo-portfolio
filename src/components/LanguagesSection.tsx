@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useTranslation } from 'react-i18next'
+import enFlag from '@/assets/flags/en.svg'
+import esFlag from '@/assets/flags/es.svg'
 
 interface LanguagesSectionProps {
   isDark: boolean
@@ -28,7 +30,7 @@ export function LanguagesSection({ isDark }: LanguagesSectionProps) {
           >
             <CardHeader className="p-4 sm:p-6">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl sm:text-3xl">🇺🇸</span>
+                <img src={enFlag} alt="" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
                 <CardTitle className="text-lg sm:text-xl">{t('languages.english')}</CardTitle>
               </div>
             </CardHeader>
@@ -59,7 +61,7 @@ export function LanguagesSection({ isDark }: LanguagesSectionProps) {
           >
             <CardHeader className="p-4 sm:p-6">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-2xl sm:text-3xl">🇪🇸</span>
+                <img src={esFlag} alt="" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
                 <CardTitle className="text-lg sm:text-xl">{t('languages.spanish')}</CardTitle>
               </div>
             </CardHeader>
