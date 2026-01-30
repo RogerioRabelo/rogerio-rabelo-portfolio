@@ -149,7 +149,7 @@ export function Hero({ isDark }: HeroProps) {
       
       <a 
         href="#experiencias"
-        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 animate-float cursor-pointer transition-transform duration-300 hover:scale-110"
+        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 cursor-pointer transition-transform duration-300 hover:scale-110"
         aria-label="Ir para experiências"
       >
         <ChevronDown 
