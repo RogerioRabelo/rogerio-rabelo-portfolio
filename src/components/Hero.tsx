@@ -147,12 +147,16 @@ export function Hero({ isDark }: HeroProps) {
         </div>
       </div>
       
-      <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 animate-float">
+      <a 
+        href="#experiencias"
+        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 animate-float cursor-pointer transition-transform duration-300 hover:scale-110"
+        aria-label="Ir para experiências"
+      >
         <ChevronDown 
           className="w-5 h-5 md:w-6 md:h-6" 
           style={{ color: isDark ? 'var(--color-dark-muted)' : 'var(--color-light-muted)' }}
         />
-      </div>
+      </a>
     </section>
   )
 }
