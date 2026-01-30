@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/button'
 import { Globe } from 'lucide-react'
+import ptFlag from '@/assets/flags/pt.svg'
+import enFlag from '@/assets/flags/en.svg'
 
 interface LanguageSelectorProps {
   isDark: boolean
@@ -12,8 +14,8 @@ export function LanguageSelector({ isDark }: LanguageSelectorProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const languages = [
-    { code: 'pt-BR', flag: '🇧🇷', name: 'Português' },
-    { code: 'en-US', flag: '🇺🇸', name: 'English' }
+    { code: 'pt-BR', flag: ptFlag, name: 'Português' },
+    { code: 'en-US', flag: enFlag, name: 'English' }
   ]
 
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0]
@@ -34,7 +36,7 @@ export function LanguageSelector({ isDark }: LanguageSelectorProps) {
           color: isDark ? 'var(--color-dark-text)' : 'var(--color-light-text)'
         }}
       >
-        <span className="text-lg">{currentLanguage.flag}</span>
+        <img src={currentLanguage.flag} alt="" className="w-5 h-5 object-contain" />
         <Globe className="h-4 w-4" />
       </Button>
 
@@ -67,7 +69,7 @@ export function LanguageSelector({ isDark }: LanguageSelectorProps) {
                   color: isDark ? 'var(--color-dark-text)' : 'var(--color-light-text)'
                 }}
               >
-                <span className="text-xl">{lang.flag}</span>
+                <img src={lang.flag} alt="" className="w-6 h-6 object-contain" />
                 <span>{lang.name}</span>
                 {i18n.language === lang.code && (
                   <span className="ml-auto text-xs" style={{ color: 'var(--color-accent)' }}>
