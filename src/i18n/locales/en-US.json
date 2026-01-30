@@ -26,8 +26,10 @@
     "period": "2018 - 2025 • Overall average: 8.2"
   },
   "languages": {
+    "portuguese": "Portuguese",
     "english": "English",
     "spanish": "Spanish",
+    "portugueseLevel": "Native — Mother tongue",
     "englishLevel": "Advanced — Fluent in conversation and reading",
     "spanishLevel": "Intermediate — Good at reading, understands well"
   },

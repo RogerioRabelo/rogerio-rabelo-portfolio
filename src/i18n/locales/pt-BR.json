@@ -26,8 +26,10 @@
     "period": "2018 - 2025 • Média geral: 8,2"
   },
   "languages": {
+    "portuguese": "Português",
     "english": "Inglês",
     "spanish": "Espanhol",
+    "portugueseLevel": "Nativo — Língua materna",
     "englishLevel": "Avançado — Fluente em conversação e leitura",
     "spanishLevel": "Intermediário — Bom em leitura, compreende bem"
   },

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useTranslation } from 'react-i18next'
+import ptFlag from '@/assets/flags/pt.svg'
 import enFlag from '@/assets/flags/en.svg'
 import esFlag from '@/assets/flags/es.svg'
 
@@ -20,9 +21,40 @@ export function LanguagesSection({ isDark }: LanguagesSectionProps) {
           {t('sections.languages')}<span className="gradient-text">.</span>
         </h2>
         
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-stretch">
           <Card
             className="opacity-0 animate-fade-in-up stagger-1 transition-transform duration-300 hover:scale-[1.02] will-change-transform h-full flex flex-col"
+            style={{
+              backgroundColor: isDark ? 'var(--color-dark-surface)' : 'var(--color-light-surface)',
+              borderColor: isDark ? 'var(--color-dark-border)' : 'var(--color-light-border)'
+            }}
+          >
+            <CardHeader className="p-4 sm:p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <img src={ptFlag} alt="" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
+                <CardTitle className="text-lg sm:text-xl">{t('languages.portuguese')}</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="p-4 sm:p-6 pt-0 flex-1">
+              <div className="flex gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                {[1,2,3,4,5].map(i => (
+                  <div 
+                    key={i}
+                    className="h-2.5 sm:h-3 flex-1 rounded-full transition-all duration-300"
+                    style={{ 
+                      backgroundColor: 'var(--color-accent)'
+                    }}
+                  />
+                ))}
+              </div>
+              <p className="text-sm sm:text-base" style={{ color: isDark ? 'var(--color-dark-muted)' : 'var(--color-light-muted)' }}>
+                {t('languages.portugueseLevel')}
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card
+            className="opacity-0 animate-fade-in-up stagger-2 transition-transform duration-300 hover:scale-[1.02] will-change-transform h-full flex flex-col"
             style={{
               backgroundColor: isDark ? 'var(--color-dark-surface)' : 'var(--color-light-surface)',
               borderColor: isDark ? 'var(--color-dark-border)' : 'var(--color-light-border)'
@@ -53,7 +85,7 @@ export function LanguagesSection({ isDark }: LanguagesSectionProps) {
           </Card>
           
           <Card
-            className="opacity-0 animate-fade-in-up stagger-2 transition-transform duration-300 hover:scale-[1.02] will-change-transform h-full flex flex-col"
+            className="opacity-0 animate-fade-in-up stagger-3 transition-transform duration-300 hover:scale-[1.02] will-change-transform h-full flex flex-col"
             style={{
               backgroundColor: isDark ? 'var(--color-dark-surface)' : 'var(--color-light-surface)',
               borderColor: isDark ? 'var(--color-dark-border)' : 'var(--color-light-border)'
