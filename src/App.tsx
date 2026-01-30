@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { ThemeToggle } from '@/components/ThemeToggle'
+import { Navigation } from '@/components/Navigation'
+import { ToastProvider } from '@/components/ToastProvider'
+import { Hero } from '@/components/Hero'
+import { ExperienceSection } from '@/components/ExperienceSection'
+import { SkillsSection } from '@/components/SkillsSection'
+import { EducationSection } from '@/components/EducationSection'
+import { LanguagesSection } from '@/components/LanguagesSection'
+import { Footer } from '@/components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { t } = useTranslation()
+  const [isDark, setIsDark] = useState(true)
+
+  useEffect(() => {
+    document.body.className = isDark ? 'dark' : 'light'
+  }, [isDark])
+
+  const toggleTheme = () => setIsDark(!isDark)
+
+  const experiences = t('experiences', { returnObjects: true }) as any[]
+  const skills = t('skills', { returnObjects: true }) as any[]
+  const certificates = t('certificates', { returnObjects: true }) as any[]
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ToastProvider isDark={isDark}>
+      <Navigation isDark={isDark} />
+      <ThemeToggle isDark={isDark} toggle={toggleTheme} />
+      <Hero isDark={isDark} />
+      <ExperienceSection isDark={isDark} experiences={experiences} />
+      <SkillsSection isDark={isDark} skills={skills} />
+      <LanguagesSection isDark={isDark} />
+      <EducationSection isDark={isDark} certificates={certificates} />
+      <Footer isDark={isDark} />
+    </ToastProvider>
   )
 }
 
