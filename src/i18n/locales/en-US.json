@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "available": "Available for new projects",
+    "title": "ROGÉRIO",
+    "subtitle": "RABELO",
+    "description": "Developer of <strong>Applied Artificial Intelligence</strong> solutions, focused on LLMs, intelligent agents, and decision flow automation.",
+    "contact": "Get in touch",
+    "viewExperience": "View experience"
+  },
+  "navigation": {
+    "experience": "Experience",
+    "skills": "Skills",
+    "languages": "Languages",
+    "education": "Education"
+  },
+  "sections": {
+    "experience": "EXPERIENCE",
+    "skills": "SKILLS",
+    "languages": "LANGUAGES",
+    "education": "EDUCATION",
+    "certifications": "CERTIFICATIONS"
+  },
+  "education": {
+    "degree": "Bachelor's in Mechatronics Engineering",
+    "university": "Federal University of São João del-Rei (UFSJ)",
+    "period": "2018 - 2025 • Overall average: 8.2"
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish",
+    "englishLevel": "Advanced — Fluent in conversation and reading",
+    "spanishLevel": "Intermediate — Good at reading, understands well"
+  },
+  "toast": {
+    "copied": "copied!",
+    "error": "Error copying",
+    "tryAgain": "Try again"
+  },
+  "footer": {
+    "rights": "© 2025 Rogério Rabelo. All rights reserved.",
+    "email": "Email",
+    "phone": "Phone"
+  },
+  "experiences": [
+    {
+      "title": "Full Stack Software Engineer",
+      "company": "Mr. Turing",
+      "period": "July 2025 - Currently",
+      "description": [
+        "Design and implementation of reliable and scalable systems",
+        "AI integration with data, semantic search, and workflows",
+        "Architectural decisions involving embeddings, AI Search, and pipelines"
+      ]
+    },
+    {
+      "title": "Project Engineering Internship",
+      "company": "P2CRANE",
+      "period": "January 2024 - January 2025",
+      "description": [
+        "Technical documentation in English",
+        "3D design, modeling, and technical detailing in SolidWorks",
+        "Interface with international clients and suppliers"
+      ]
+    },
+    {
+      "title": "Scientific Initiation Scholar",
+      "company": "CNPq",
+      "period": "September 2023 - September 2024",
+      "description": [
+        "AI application development in Python and JavaScript",
+        "Deep learning models focused on computer vision (CNNs)",
+        "Land use prediction from satellite images"
+      ]
+    },
+    {
+      "title": "Project Experience",
+      "company": "COPEL Engenharia",
+      "period": "March 2022 - May 2023",
+      "description": [
+        "Team leadership and problem solving",
+        "3D modeling in Revit and SolidWorks software",
+        "Technical drawings and calculation reports"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Backend & Architecture",
+      "items": ["Node.js", ".NET", "REST APIs", "Distributed Systems", "Data Pipelines"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["React", "Angular", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      "category": "AI & Machine Learning",
+      "items": ["LLMs", "RAG", "Intelligent Agents", "Computer Vision", "CNNs"]
+    },
+    {
+      "category": "Data & Storage",
+      "items": ["SQL", "Azure Blob", "Object Storage (R2)", "Semantic Search", "Embeddings"]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "AI Agents Specialization",
+      "institution": "Vanderbilt University",
+      "year": "2025"
+    },
+    {
+      "title": "Machine Learning Specialization",
+      "institution": "Stanford University",
+      "year": "2024"
+    },
+    {
+      "title": "TOEFL ITP - B2 Level",
+      "institution": "ETS",
+      "year": "2023"
+    }
+  ]
+}

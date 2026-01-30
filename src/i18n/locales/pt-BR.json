@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "available": "Disponível para novos projetos",
+    "title": "ROGÉRIO",
+    "subtitle": "RABELO",
+    "description": "Desenvolvedor de soluções em <strong>Inteligência Artificial aplicada</strong>, com foco em LLMs, agentes inteligentes e automação de fluxos de decisão.",
+    "contact": "Entre em contato",
+    "viewExperience": "Ver experiência"
+  },
+  "navigation": {
+    "experience": "Experiência",
+    "skills": "Competências",
+    "languages": "Idiomas",
+    "education": "Educação"
+  },
+  "sections": {
+    "experience": "EXPERIÊNCIA",
+    "skills": "COMPETÊNCIAS",
+    "languages": "IDIOMAS",
+    "education": "EDUCAÇÃO",
+    "certifications": "CERTIFICAÇÕES"
+  },
+  "education": {
+    "degree": "Bacharelado em Engenharia Mecatrônica",
+    "university": "Universidade Federal de São João del-Rei (UFSJ)",
+    "period": "2018 - 2025 • Média geral: 8,2"
+  },
+  "languages": {
+    "english": "Inglês",
+    "spanish": "Espanhol",
+    "englishLevel": "Avançado — Fluente em conversação e leitura",
+    "spanishLevel": "Intermediário — Bom em leitura, compreende bem"
+  },
+  "toast": {
+    "copied": "copiado!",
+    "error": "Erro ao copiar",
+    "tryAgain": "Tente novamente"
+  },
+  "footer": {
+    "rights": "© 2025 Rogério Rabelo. Todos os direitos reservados.",
+    "email": "Email",
+    "phone": "Telefone"
+  },
+  "experiences": [
+    {
+      "title": "Engenheiro de Software Full Stack",
+      "company": "Mr. Turing",
+      "period": "Julho 2025 - Atualmente",
+      "description": [
+        "Projeto e implementação de sistemas confiáveis e escaláveis",
+        "Integração de IA com dados, busca semântica e workflows",
+        "Decisões arquiteturais envolvendo embeddings, AI Search e pipelines"
+      ]
+    },
+    {
+      "title": "Estágio em Engenharia de Projetos",
+      "company": "P2CRANE",
+      "period": "Janeiro 2024 - Janeiro 2025",
+      "description": [
+        "Elaboração de documentação técnica em inglês",
+        "Projeto, modelagem 3D e detalhamento técnico no SolidWorks",
+        "Interface com clientes e fornecedores internacionais"
+      ]
+    },
+    {
+      "title": "Bolsista de Iniciação Científica",
+      "company": "CNPq",
+      "period": "Setembro 2023 - Setembro 2024",
+      "description": [
+        "Desenvolvimento de aplicações de IA em Python e JavaScript",
+        "Modelos de deep learning com foco em visão computacional (CNNs)",
+        "Predição de uso do solo a partir de imagens de satélite"
+      ]
+    },
+    {
+      "title": "Experiência em Projetos",
+      "company": "COPEL Engenharia",
+      "period": "Março 2022 - Maio 2023",
+      "description": [
+        "Liderança de equipe e resolução de problemas",
+        "Modelagem 3D nos softwares Revit e SolidWorks",
+        "Elaboração de desenhos técnicos e memoriais de cálculo"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Backend & Arquitetura",
+      "items": ["Node.js", ".NET", "APIs REST", "Sistemas Distribuídos", "Pipelines de Dados"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["React", "Angular", "TypeScript", "Tailwind CSS"]
+    },
+    {
+      "category": "IA & Machine Learning",
+      "items": ["LLMs", "RAG", "Agentes Inteligentes", "Visão Computacional", "CNNs"]
+    },
+    {
+      "category": "Dados & Storage",
+      "items": ["SQL", "Azure Blob", "Object Storage (R2)", "Busca Semântica", "Embeddings"]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "AI Agents Specialization",
+      "institution": "Vanderbilt University",
+      "year": "2025"
+    },
+    {
+      "title": "Machine Learning Specialization",
+      "institution": "Stanford University",
+      "year": "2024"
+    },
+    {
+      "title": "TOEFL ITP - B2 Level",
+      "institution": "ETS",
+      "year": "2023"
+    }
+  ]
+}
