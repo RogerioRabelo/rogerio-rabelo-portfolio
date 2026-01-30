@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button } from "@/components/ui/button"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, Github } from "lucide-react"
 import { useToast } from '@/components/ToastProvider'
 import { useTranslation } from 'react-i18next'
 
@@ -38,16 +38,6 @@ export function Hero({ isDark }: HeroProps) {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center relative z-10 w-full">
         <div className="order-2 lg:order-1 text-center lg:text-left">
           <div className="opacity-0 animate-fade-in-up stagger-1">
-            <span 
-              className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6"
-              style={{
-                backgroundColor: isDark ? 'var(--color-dark-surface)' : 'var(--color-light-surface)',
-                border: `1px solid ${isDark ? 'var(--color-dark-border)' : 'var(--color-light-border)'}`
-              }}
-            >
-              <span className="inline-block w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-              {t('hero.available')}
-            </span>
           </div>
           
           <h1 
@@ -66,15 +56,18 @@ export function Hero({ isDark }: HeroProps) {
           
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-6 md:mb-8 justify-center lg:justify-start opacity-0 animate-fade-in-up stagger-4">
             <Button 
+              asChild
               size="lg"
-              className="w-full sm:w-auto cursor-pointer"
-              onClick={() => handleCopy('r.rabelo.f7@gmail.com', 'Email')}
+              className="w-full sm:w-auto"
               style={{ 
                 backgroundColor: 'var(--color-accent)',
                 color: 'var(--color-dark-bg)'
               }}
             >
-              {t('hero.contact')}
+              <a href="https://github.com/RogerioRabelo" target="_blank" rel="noopener noreferrer">
+                <Github className="w-5 h-5 mr-2" />
+                GitHub
+              </a>
             </Button>
             <Button 
               asChild
