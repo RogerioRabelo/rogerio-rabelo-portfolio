@@ -36,7 +36,7 @@ export function Hero({ isDark }: HeroProps) {
   }
   
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 pb-20 md:pb-24 relative overflow-hidden">
       <div 
         className="absolute inset-0 opacity-30"
         style={{
@@ -149,7 +149,7 @@ export function Hero({ isDark }: HeroProps) {
       
       <a 
         href="#experiencias"
-        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 cursor-pointer transition-transform duration-300 hover:scale-110"
+        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 cursor-pointer transition-transform duration-300 hover:scale-110 z-20"
         aria-label="Ir para experiências"
       >
         <ChevronDown 
